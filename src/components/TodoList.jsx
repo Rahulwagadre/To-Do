@@ -1,5 +1,5 @@
 import React from 'react'
-import TodoCard from './TodoCard';
+import Todocard from './Todocard';
 
 export const TodoList = ( {todos, handleDeleteTodo, handleUpdateTodo} ) => {
     console.log(todos);
