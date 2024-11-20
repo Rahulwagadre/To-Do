@@ -6,9 +6,9 @@ export const TodoList = ( {todos, handleDeleteTodo, handleUpdateTodo} ) => {
     return (
         <ul className='main'>
             {todos.map((todo, index) => {
-                return <TodoCard key={index} index={index} handleDeleteTodo={handleDeleteTodo} handleUpdateTodo={handleUpdateTodo}>
+                return <Todocard key={index} index={index} handleDeleteTodo={handleDeleteTodo} handleUpdateTodo={handleUpdateTodo}>
                         <p>{todo}</p>
-                </TodoCard>
+                </Todocard>
             })}
         </ul>
     )
