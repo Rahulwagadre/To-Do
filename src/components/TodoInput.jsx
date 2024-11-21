@@ -9,8 +9,11 @@ export const TodoInput = ({handleAddTodo, inputTodo, setInputTodo}) => {
                 setInputTodo(e.target.value);
             }} value = {inputTodo} placeholder="Enter Todo..."></input>
             <button onClick = {() => {
-                handleAddTodo(inputTodo);
-                setInputTodo('');
+                if(!(inputTodo == null || inputTodo.length <= 0))
+                {
+                    handleAddTodo(inputTodo);
+                    setInputTodo('');
+                }
             }}>Add</button>
         </header>
     )
